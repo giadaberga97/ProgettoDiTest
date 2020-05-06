@@ -13,3 +13,11 @@ im_sharp.save( 'image_sharpened.jpg', 'JPEG' )
 #and Blue for RGB
 r,g,b = im_sharp.split()
 
+#Applying blur filter to the image
+im_blur = im.filter( ImageFilter.BLUR )
+
+#Saving the filtered image to a new file
+im_blur.save( 'image_blurred.jpg', 'JPEG' )
+
+#Display blurred image
+im_blur.show()
