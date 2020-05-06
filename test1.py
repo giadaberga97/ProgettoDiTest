@@ -1,6 +1,6 @@
 from PIL import Image, ImageFilter
 #Read image
-im = Image.open( 'image.jpeg' )
+im = Image.open( '18873.jpg' )
 #Display image
 im.show()
 
@@ -13,6 +13,3 @@ im_sharp.save( 'image_sharpened.jpg', 'JPEG' )
 #and Blue for RGB
 r,g,b = im_sharp.split()
 
-#Viewing EXIF data embedded in image
-exif_data = im._getexif()
-exif_data
