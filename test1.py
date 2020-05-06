@@ -21,3 +21,10 @@ im_blur.save( 'image_blurred.jpg', 'JPEG' )
 
 #Display blurred image
 im_blur.show()
+
+#Applying emboss filter to the image
+im_emboss = im.filter( ImageFilter.EMBOSS )
+#Saving the filtered image to a new file
+im_emboss.save( 'image_embossed.jpg', 'JPEG' )
+#Display blurred image
+im_emboss.show()
