@@ -1,6 +1,6 @@
 from PIL import Image, ImageFilter
 #Read image
-im = Image.open( '18873.jpg' )
+im = Image.open( 'cat.jpg' )
 #Display image
 im.show()
 
@@ -21,10 +21,3 @@ im_blur.save( 'image_blurred.jpg', 'JPEG' )
 
 #Display blurred image
 im_blur.show()
-
-#Applying emboss filter to the image
-im_emboss = im.filter( ImageFilter.EMBOSS )
-#Saving the filtered image to a new file
-im_emboss.save( 'image_embossed.jpg', 'JPEG' )
-#Display blurred image
-im_emboss.show()
